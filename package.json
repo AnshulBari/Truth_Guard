@@ -1,0 +1,14 @@
+{
+  "name": "truthguard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Adversarial verification for multi-agent document Q&A",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix frontend run start",
+    "backend": "python -m uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8000",
+    "test": "python -m pytest backend/tests -q",
+    "eval": "python backend/eval/run_eval.py"
+  }
+}
